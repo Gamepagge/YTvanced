@@ -12,7 +12,6 @@
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/Gamepagge/YTvanced@main/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Gamepagge/YTvanced@main/styles.css">
     <style>
         /* Insert the provided CSS here */
         body {
@@ -401,12 +400,12 @@
 
     <div class="row mb-6">
         <div class="col">
-            <a href="https://gitlab.com/FilesCDN/CDN/-/raw/main/youtubevanced/YouTube_Vanced.apk" target="_blank" class="btn btn-primary main-download-btn directx-download-btn">YouTube Vanced</a>
+            <a target="_blank" class="btn btn-primary main-download-btn directx-download-btn" onclick="downloadFile('Vanced')">YouTube Vanced</a>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <a href="https://gitlab.com/FilesCDN/CDN/-/raw/main/youtubevanced/microG.apk" target="_blank" class="btn btn-danger main-download-btn visualc-download-btn">microG</a>
+            <a target="_blank" class="btn btn-danger main-download-btn visualc-download-btn" onclick="downloadFile('Vanced')">microG</a>
         </div>
     </div>
 </div>
@@ -449,6 +448,18 @@
             var downloadArea = document.getElementById('download-area');
             downloadArea.scrollIntoView({ behavior: 'smooth' });
         }
+		
+		function downloadFile(filename) {
+    if (filename === 'Vanced') {
+        window.location.href = 'https://www.dropbox.com/scl/fi/3byajzlm67pu83wcgcypb/ReVanced-Extended-19.07.40.apk?rlkey=ojoa3idewkpkypi45buxemggv&st=7l7ucfgd&dl=1'; // Replace with the actual download link for Vanced
+    } else if (filename === 'microG') {
+        window.location.href = 'https://www.dropbox.com/scl/fi/vz47432zfedh348a0n2z1/microG-Services-0.3.1.3.240913.apk?rlkey=fyx1mlz7fdumwm0edof4c4huf&st=24m2fsl1&dl=1'; // Replace with the actual download link for microG
+    } else {
+        console.error('Invalid filename');
+    }
+}
+
+		
     </script>
 </body>
 </html>
